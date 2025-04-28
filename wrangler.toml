@@ -1,14 +1,17 @@
-#:schema node_modules/wrangler/config-schema.json
-name = "somalia_news_nextjs"
-main = ".open-next/worker.js"
+name = "somalia_news_nextjs"  # You can keep this name or change it
 compatibility_date = "2024-09-23"
-compatibility_flags = ["nodejs_compat"]
+compatibility_flags = ["nodejs_compat"]  # If you are working with Python, you might not need this. 
+
+# Since you're working with Python, you will use the python runtime
+type = "python"  # Change this from 'node' to 'python' to indicate the worker is using Python.
 
 [build]
-command = "npm run build"
+# Specify the command to install dependencies and start the worker
+command = "pip install -r requirements.txt && python your_main_script.py"
 cwd = "."
 watch_dir = "."
 
+# Set up the assets (only if you need to use them)
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
@@ -16,8 +19,7 @@ binding = "ASSETS"
 [[d1_databases]]
 binding = "DB"
 database_name = "somalia_news_db"
-# database_id = "" # for local dev
-# preview_database_id = "" # optional for previews
+# Remove database_id and preview_database_id unless you're working with D1 locally.
 
 [env.production.d1_databases]
 binding = "DB"
