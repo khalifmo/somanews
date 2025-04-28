@@ -1,0 +1,40 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main # or 'master' depending on your branch
+  workflow_dispatch: # allow manual deploys too
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # or 18 if you prefer, but 20 is better for OpenNext
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: somalia_news_nextjs
+          branch: main
+          directory: .open-next # <- Important: where OpenNext outputs the build
+          wranglerVersion: '3' # Important for Pages Functions
+
+          # optional: if you want to upload environment variables too
+          # environmentVariables: |
+          #   NODE_ENV=production
+          #   CUSTOM_VAR=value
