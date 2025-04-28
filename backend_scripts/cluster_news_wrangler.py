@@ -95,7 +95,7 @@ def query_sql(sql, params=()):
 
 def get_unclustered_articles(days=7):
     """Get articles that haven't been assigned to a story yet."""
-    cutoff_date = (datetime.datetime.now() - datetime.datetime.timedelta(days=days)).isoformat()
+    cutoff_date = (datetime.datetime.now() - datetime.timedelta(days=days)).isoformat()
     
     return query_sql(
         """
