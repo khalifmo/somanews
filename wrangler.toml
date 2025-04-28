@@ -1,27 +1,27 @@
 name = "somalia_news_nextjs"  # You can keep this name or change it
 compatibility_date = "2024-09-23"
-compatibility_flags = ["nodejs_compat"]  # If you are working with Python, you might not need this. 
+compatibility_flags = ["nodejs_compat"]  # Only needed if working with Node.js, otherwise you can omit this.
 
-# Since you're working with Python, you will use the python runtime
-type = "python"  # Change this from 'node' to 'python' to indicate the worker is using Python.
+# Since you're working with Python, change the type to 'python'
+type = "python"  # Ensure that you're using Python runtime.
 
 [build]
-# Specify the command to install dependencies and start the worker
-command = "pip install -r requirements.txt && python your_main_script.py"
+# Command to install dependencies and start the worker
+command = "pip install -r requirements.txt && python worker.py"  # Replace 'worker.py' with your main script
 cwd = "."
 watch_dir = "."
 
-# Set up the assets (only if you need to use them)
+# Assets section (if you have any assets in your project)
 [assets]
-directory = ".open-next/assets"
+directory = ".open-next/assets"  # Make sure this path is correct for your assets
 binding = "ASSETS"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "somalia_news_db"
-# Remove database_id and preview_database_id unless you're working with D1 locally.
+database_name = "somalia_news_db"  # Make sure this is the correct name for your D1 database
 
 [env.production.d1_databases]
 binding = "DB"
-database_name = "somalia_news_db_prod"
-database_id = "a5c443bd-4c8e-4c06-89c6-4a15959662a7"
+database_name = "somalia_news_db_prod"  # Your production database name
+database_id = "a5c443bd-4c8e-4c06-89c6-4a15959662a7"  # Make sure this ID is correct for your production setup
+
