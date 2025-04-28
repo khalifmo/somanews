@@ -8,15 +8,17 @@ compatibility_flags = ["nodejs_compat"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+# --- Default / Local Development Database --- 
+# Used when running 'wrangler dev'
 [[d1_databases]]
 binding = "DB" # Environment variable name for the database binding
-database_name = "somalia_news_db" # Name for the database
-database_id = "local" # Use "local" for wrangler dev
+database_name = "somalia_news_db" # Name for the local database
+# database_id = "" # Usually omit for local file-based DB
+# preview_database_id = "<YOUR_PREVIEW_DB_ID>" # Optional: If you use preview DBs
 
-# For production, create a D1 database and replace the database_id:
-# wrangler d1 create somalia_news_db_prod
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "somalia_news_db_prod"
-# database_id = "<YOUR_PRODUCTION_DB_ID>"
-
+# --- Production Database --- 
+# Used when deploying to Cloudflare Pages (production)
+[env.production.d1_databases]
+binding = "DB" # Keep the binding name the same
+database_name = "somalia_news_db_prod" # Use the production DB name
+database_id = "a5c443bd-4c8e-4c06-89c6-4a15959662a7" # <<< YOUR PRODUCTION DB ID GOES HERE
