@@ -13,7 +13,8 @@
     "lint": "next lint",
     "build:worker": "opennextjs-cloudflare",
     "preview": "opennextjs-cloudflare && wrangler dev",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "prepare": "npm install"
   },
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.0.0",
