@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.pnp.loader.mjs
+
+# Testing
+/coverage
+
+# Next.js build files
+/.next/
+/out/
+
+# Production build files
+/build
+.open-next
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional Prettier cache
+.prettiercache
+
+# Environment variables
+.env*.local
+.env
+
+# IDE files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+
+# macOS system files
+.DS_Store
+._*
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+
+# Deno cache
+/deno.lock
+
+# Wrangler secrets
+.wrangler/
