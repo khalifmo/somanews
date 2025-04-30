@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/api/stories/[storyId]/route": "app/api/stories/[storyId]/route.js",
+  "/api/sources/route": "app/api/sources/route.js",
+  "/api/blindspots/route": "app/api/blindspots/route.js",
+  "/api/stories/route": "app/api/stories/route.js"
+}

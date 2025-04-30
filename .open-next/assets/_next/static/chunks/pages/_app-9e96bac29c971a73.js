@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[636],{79:(_,n,p)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/_app",function(){return p(6319)}])}},_=>{var n=n=>_(_.s=n);_.O(0,[593,792],()=>(n(79),n(6725))),_N_E=_.O()}]);

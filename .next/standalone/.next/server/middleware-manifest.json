@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/stories/[storyId]/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/stories/[storyId]/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/254.js",
+        "server/app/api/stories/[storyId]/route.js"
+      ],
+      "name": "app/api/stories/[storyId]/route",
+      "page": "/api/stories/[storyId]/route",
+      "matchers": [
+        {
+          "regexp": "^/api/stories/(?<storyId>[^/]+?)$",
+          "originalSource": "/api/stories/[storyId]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "XhPoU1oUrnyTpzt4XNhiz",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "jM0l3suIAkM0VRLwBjdo4Mu9qv2geyVVv0Z1nte7Nys=",
+        "__NEXT_PREVIEW_MODE_ID": "ddd460eec56ffcbd28b26575221744b9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "fe2ff384d3f841bc15228ad351e105892d78b10dbc39176ea3418f95bb8d4330",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "96cb7c98ecf5b0891eddf90935b292d824ea2aee0e6c5586cd934c98ed2d0f69"
+      }
+    },
+    "/api/sources/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/sources/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/254.js",
+        "server/app/api/sources/route.js"
+      ],
+      "name": "app/api/sources/route",
+      "page": "/api/sources/route",
+      "matchers": [
+        {
+          "regexp": "^/api/sources$",
+          "originalSource": "/api/sources"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "XhPoU1oUrnyTpzt4XNhiz",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "jM0l3suIAkM0VRLwBjdo4Mu9qv2geyVVv0Z1nte7Nys=",
+        "__NEXT_PREVIEW_MODE_ID": "ddd460eec56ffcbd28b26575221744b9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "fe2ff384d3f841bc15228ad351e105892d78b10dbc39176ea3418f95bb8d4330",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "96cb7c98ecf5b0891eddf90935b292d824ea2aee0e6c5586cd934c98ed2d0f69"
+      }
+    },
+    "/api/blindspots/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/blindspots/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/254.js",
+        "server/app/api/blindspots/route.js"
+      ],
+      "name": "app/api/blindspots/route",
+      "page": "/api/blindspots/route",
+      "matchers": [
+        {
+          "regexp": "^/api/blindspots$",
+          "originalSource": "/api/blindspots"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "XhPoU1oUrnyTpzt4XNhiz",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "jM0l3suIAkM0VRLwBjdo4Mu9qv2geyVVv0Z1nte7Nys=",
+        "__NEXT_PREVIEW_MODE_ID": "ddd460eec56ffcbd28b26575221744b9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "fe2ff384d3f841bc15228ad351e105892d78b10dbc39176ea3418f95bb8d4330",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "96cb7c98ecf5b0891eddf90935b292d824ea2aee0e6c5586cd934c98ed2d0f69"
+      }
+    },
+    "/api/stories/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/stories/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/254.js",
+        "server/app/api/stories/route.js"
+      ],
+      "name": "app/api/stories/route",
+      "page": "/api/stories/route",
+      "matchers": [
+        {
+          "regexp": "^/api/stories$",
+          "originalSource": "/api/stories"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "XhPoU1oUrnyTpzt4XNhiz",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "jM0l3suIAkM0VRLwBjdo4Mu9qv2geyVVv0Z1nte7Nys=",
+        "__NEXT_PREVIEW_MODE_ID": "ddd460eec56ffcbd28b26575221744b9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "fe2ff384d3f841bc15228ad351e105892d78b10dbc39176ea3418f95bb8d4330",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "96cb7c98ecf5b0891eddf90935b292d824ea2aee0e6c5586cd934c98ed2d0f69"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
