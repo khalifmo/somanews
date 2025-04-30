@@ -1,21 +1,10 @@
 name = "somalia_news_nextjs"
 compatibility_date = "2024-09-23"
 
-type = "python"
-
-[build]
-# Command to install dependencies and run your main script
-command = "pip install -r requirements.txt && python worker.py"  # Ensure 'worker.py' is your script
-cwd = "."
-watch_dir = "."
-
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
-
 [[d1_databases]]
-binding = "DB"
+binding = "DB" # Keep D1 binding for Pages Functions
 database_name = "somalia_news_db"
+preview_database_id = "somalia_news_db" # Add preview_database_id for local development/preview
 
 [env.production.d1_databases]
 binding = "DB"
