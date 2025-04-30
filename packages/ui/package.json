@@ -1,0 +1,12 @@
+{
+  "name": "@somanews/ui",
+  "version": "1.0.0",
+  // ... other fields ...
+
+  // Remove this section if it exists:
+  // "workspaces": [
+  //   "nested-packages/*"
+  // ],
+
+  // ... other fields ...
+}

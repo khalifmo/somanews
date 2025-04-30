@@ -1,0 +1,5 @@
+packages:
+  # Include the root package
+  - "."
+  # Include all packages in nested directories
+  # - "packages/*"

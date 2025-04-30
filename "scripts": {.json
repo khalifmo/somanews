@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    // "prepare": "npm install",
+    "build": "next build"
+  }
+}
